@@ -15,7 +15,7 @@ on:
 
 jobs:
   tfsec:
-    name: Run tfsec sarif report
+    name: Run tfsec sarif report - ${{ github.event_name }}
     runs-on: ubuntu-latest
     permissions:
       actions: read
