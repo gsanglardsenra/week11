@@ -1,0 +1,17 @@
+name: tfsec
+
+on:
+  push:
+    branches: [ "prod", "staging", "dev" ]
+  pull_request:
+    branches: [ "prod", "staging", "dev" ]
+
+jobs:
+  tfsec:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
