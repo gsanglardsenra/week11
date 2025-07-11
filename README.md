@@ -4,4 +4,4 @@
 
 I made a change
 
-One more small change
+Small change
