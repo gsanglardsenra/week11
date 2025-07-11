@@ -2,6 +2,4 @@
 
  Hello World
 
-I made a change
-
-Small change
+I reverted the change
